@@ -80,7 +80,21 @@
 
    echo $remplazoO;
 
+   echo "<br/>";
 
+   echo "<br/>";
+
+
+   $url = 'http://username:password@hostname:9090/path?arg=value';
+
+   echo (parse_url($url, PHP_URL_SCHEME));
+   echo "<br/>";
+
+   echo(parse_url($url, PHP_URL_USER));
+   echo "<br/>";
+   echo(parse_url($url,PHP_URL_PATH));
+   echo "<br/>";
+   echo(parse_url($url, PHP_URL_QUERY));
 
 
     ?>
