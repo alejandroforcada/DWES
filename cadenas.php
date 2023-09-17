@@ -9,7 +9,7 @@
 <body>
     <?php  
     $nombre= $_GET['x'] ?? 'Alejandro';
-    $prefijo= $_GET['y'] ?? 'Alejandro';
+
 
     $nombreacortado= trim($nombre,'/');
 
@@ -49,9 +49,13 @@
 
     echo "<br/>";
 
-    $cadenaprefijo= strpos($nombreacortado,$prefijo);
+    if (isset($_GET['y'])){
+
+
+    $prefijo=$_GET['y'];
+    $cadenaprefijo= strpos($nombreacortado,$prefijo,0);
     
-    print($cadenaprefijo === false ? 'NO tiene prefijo' : 'Sí tiene prefijo');
+    print($cadenaprefijo === 0 ? 'Si tiene prefijo' : 'No tiene prefijo');}
 
     
 
