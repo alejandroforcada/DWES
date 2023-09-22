@@ -15,7 +15,7 @@
     for($i=1;$i<count($array);$i++){
 
         $detras=implode(' ',array_slice($array,$i));
-       $delante= implode(' ',array_slice($array,0,$i));
+        $delante= implode(' ',array_slice($array,0,$i));
 
        $arraySeparado[]=[$delante,$detras];
     
