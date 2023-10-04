@@ -79,7 +79,7 @@ if(isset($_POST["submit"]) && isset($_FILES['imagen'])){
 ?>
 <img src='<?= $nombreCompleto ?>' alt='hola'> <br>
 
-  Tu educacion es<?php echo $_POST['educacion']?>
+  Tu educacion es <?php echo $_POST['educacion']?>
 </body>
 
 </html>
