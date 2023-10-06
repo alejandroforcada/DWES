@@ -4,6 +4,7 @@ require('conexion.php');
 $errorPass = "";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
+    
     $nombre = $_POST['nombre'] ;
     $email= $_POST['email'] ;
     $contraseña= $_POST['contraseña'] ;
@@ -45,5 +46,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <?php echo $errorPass. " "?>
             <input type="submit" name="submit" value="Registrarse"/>
         </form>
+        <a href='login.php'>Login</a>
+        <a href='logout.php'>Logout</a>
+       
     </body>
 </html>
